@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="outer-container">
+<div class="slideshow-container">
+    
+    <div class="title">
+   <h1>Monday Pickleball Practice</h1>
+    </div>
+    
+    <div class="project-topic">
+   <h1>Pickleball Culture in SLO</h1>
+    </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="pics/c2p1.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | The Pickleball wave has hit the central coast. San Luis Obispo Country Club members play pickleball every Monday from 4:30 to 6 p.m. on court 6 at the club. </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="pics/c2p2.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Racquets or paddles? Players use these rounded square paddles to hit the ball. 
+The paddles mimic a ping pong paddle more than a traditional tennis racquet. 
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="pics/c2p3.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Wiffle balls are the official balls used in a game of pickleball. </div>
+</div>
+  <div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="pics/c2p4.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Tennis member, Heidi Gill, gets ready to serve the first ball of the game. Games are played to 11 points. 
+</div>
+</div>  
+  <div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="pics/c2p5.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Returning the serve can be tough when trying to avoid an area of the court. It is important to be  positioned behind the “kitchen” to avoid losing a point. The kitchen is the front area between the net and the blue line that indicates a dead zone area. “You can’t take a ball out of the air in the kitchen, if you do the point goes to your opponent,” Sarah Kreukel said. 
+
+</div>
+</div>  
+  <div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="pics/c2p6.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Pickleball can be played with 4 or 6 people. When playing with an extra player it’s called Mortimer. The SLO country club is one of the first to implement this technique into their Monday play day. </div>
+</div>  
+    <div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="pics/c2p7.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Pickleball requires just as much footwork and movement as tennis. “It’s a quicker more rapid change of direction compared to tennis,” Heidi Gill said. “People are lured in by the smaller court but it’s just an illusion.”
+
+</div>
+</div>  
+    <div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="pics/c2p8.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Luke Colero picks up the ball after being smashed on by his opponent. From the looks of it pickleball isn’t all about competition, it’s also about having fun!
+
+</div>
+</div>  
+    <div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="pics/c2p9.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Heidi charges the net to reach the ball as the final point of the game is played out. 
+
+</div>
+</div> 
+    <div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="pics/c2p10.JPG" style="width:100%">
+  <div class="text">San Luis Obispo Country Club, Oct. 14, 2019 | Jean Kennedy’s team wins! After they finish the game they “pickle poke” instead of high five. A pickle poke is when all of the players on the court tap the ends of their paddles together. “Pickleball is all about having fun with everybody and of course winning,” Kennedy said. 
+</div>
+</div>  
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
